@@ -167,6 +167,52 @@ small {
   }
 }
 
+/*============================*/
+/*=======| HOME PAGE | =======*/
+/*============================*/
+
+.movie-home-wrapper {
+  width: 70%;
+  margin: 50px auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.first-row, .sec-row {
+  display: flex;
+}
+
+.first-row .movie, .sec-row .movie {
+  flex: 1;
+}
+
+.movie {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 250px;
+}
+
+.movie img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.movie h3 {
+  z-index: 999;
+  text-shadow: 2px 2px #000;
+  padding: 5px 8px 0 8px;
+}
+
+.movie .react-rater {
+  z-index: 999;
+  text-shadow: 2px 2px #000;
+  padding: 5px 5px;
+}
+
+
+
 
 /*===============================*/
 /*=====| BACKGROUND IMAGE | =====*/

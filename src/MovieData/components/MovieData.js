@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 
+import MovieHome from './MovieHome'
+
 class MovieData extends Component {
 
   render() {
@@ -17,14 +19,14 @@ class MovieData extends Component {
               <img src={poster} alt=""/>
             </div>
             <div className="movie-data">
-              <h1>{movie.title}  &nbsp; <span id="year">({movie.release_date})</span></h1>
+              <h1>{movie.title}  &nbsp; <span id="year">({movie.release_date.substring(0, 4)})</span></h1>
               <h3>{movie.tagline}</h3>
               <p>{movie.overview}</p>
               <div className="stats">
                 <div className="stats-left">
                   <div id="first">
                     <h4>Revenue</h4>
-                    <h2>${movie.revenue}</h2>
+                    <h2>${movie.revenue.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</h2>
                   </div>
                   <div>
                     <h4>Rating</h4>
@@ -35,7 +37,7 @@ class MovieData extends Component {
                 <div className="stats-right">
                   <div>
                     <h4>Budget</h4>
-                    <h2>${movie.budget}</h2>
+                    <h2>${movie.budget.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</h2>
                   </div>
                   <div>
                     <h4>Runtime</h4>
@@ -51,7 +53,9 @@ class MovieData extends Component {
         </div>
       )
     } else {
-        return null
+      return (
+        <MovieHome />
+      )
     }
   }
 }

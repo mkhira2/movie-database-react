@@ -10,6 +10,7 @@ class Search extends Component {
     e.preventDefault()
     const searchValue = e.target.search.value
     this.props.fetchAPI(searchValue)
+    e.target.search.value = ""
   }
 
   render() {
