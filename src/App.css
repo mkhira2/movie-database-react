@@ -189,7 +189,7 @@ small {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  height: 250px;
+  height: 275px;
 }
 
 .movie img {

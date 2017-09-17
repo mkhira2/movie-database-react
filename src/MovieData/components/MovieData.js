@@ -8,7 +8,6 @@ class MovieData extends Component {
 
   render() {
     let movie = this.props.movieData
-    console.log(movie);
     if(movie) {
       let poster = 'https://image.tmdb.org/t/p/w500' + movie.poster_path
       let background = 'https://image.tmdb.org/t/p/original' + movie.backdrop_path

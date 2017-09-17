@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 
+const key = require('../../config.js').MY_KEY
+
 class MovieHome extends Component {
   constructor() {
     super()
@@ -9,7 +11,7 @@ class MovieHome extends Component {
   }
 
   componentWillMount() {
-    const url = 'https://api.themoviedb.org/3/discover/movie?api_key=dd7f861ba1f1c9990f88febfba94e4dc&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_year=2017&vote_average.gte=7'
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_year=2017&vote_average.gte=7`
     fetch(url)
       .then(res => res.json())
       .then(movies => {
@@ -21,7 +23,6 @@ class MovieHome extends Component {
 
   render() {
     let movies = this.state.topMovies
-    console.log(movies);
     if (!movies) {
       return null
     }

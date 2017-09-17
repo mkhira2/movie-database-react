@@ -4,6 +4,8 @@ import Header from '../../Header/components/Header'
 import MovieData from '../../MovieData/components/MovieData'
 import Footer from '../../Footer/components/Footer'
 
+const key = require('../../config.js').MY_KEY
+
 class Movies extends Component {
   constructor() {
     super()
@@ -14,11 +16,11 @@ class Movies extends Component {
   }
 
   fetchAPI(title) {
-    const URL = `https://api.themoviedb.org/3/search/movie?api_key=dd7f861ba1f1c9990f88febfba94e4dc&query=${title}`
+    const URL = `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${title}`
     fetch(URL)
       .then(res => res.json())
       .then(data => {
-        fetch(`https://api.themoviedb.org/3/movie/${data.results[0].id}?api_key=dd7f861ba1f1c9990f88febfba94e4dc`)
+        fetch(`https://api.themoviedb.org/3/movie/${data.results[0].id}?api_key=${key}`)
         .then(res => res.json())
         .then(movie => {
           this.setState({
@@ -30,7 +32,6 @@ class Movies extends Component {
   }
 
   render() {
-    console.log(this.state.movieData)
     return (
       <div className="container">
         <Header fetchAPI={this.fetchAPI}/>
