@@ -26,6 +26,8 @@ npm install
 npm start
 
 open localhost:3000 in the browser
+
+* Project Requires an API key from The Movie Database
 ```
 
 ## License
