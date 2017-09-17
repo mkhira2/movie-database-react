@@ -3,7 +3,7 @@
 MovieBase is a Movie Database clone powered by The Movie Database API. The project was built using create-react-app.
 
 ## Screenshot
-![KinderQ Screen Shot](/public/images/moviebase.jpg)
+![MovieBase Screen Shot](public/images/moviebase.png)
 
 ## Learning
 
@@ -12,7 +12,7 @@ This app was built in an effort to become more familiar with ReactJS
 ## ToDo
 
 * Still need to work on the mobile styling
-* Would like to make the images on the home page cleaner and links to thier specific pages 
+* Would like to make the images on the home page cleaner and links to thier specific pages
 
 ## Built With
 
