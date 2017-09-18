@@ -24,34 +24,35 @@ class MovieHome extends Component {
   render() {
     let movies = this.state.topMovies
     if (movies) {
+      console.log(movies);
       return (
         <div className="flex-wrapper">
           <div className="movie-home-wrapper">
             <div className="first-row">
               <div className="movie">
-                <Rater total={10} rating={movies.results[0].vote_average} interactive={false}/>
+                {/* <Rater total={10} rating={movies.results[0].vote_average} interactive={false}/> */}
                 <h3>{movies.results[0].title}</h3>
                 <img src={`https://image.tmdb.org/t/p/original${movies.results[0].backdrop_path}`} alt=""/>
               </div>
               <div className="movie">
-                <Rater total={10} rating={movies.results[1].vote_average} interactive={false}/>
+                {/* <Rater total={10} rating={movies.results[1].vote_average} interactive={false}/> */}
                 <h3>{movies.results[1].title}</h3>
                 <img src={`https://image.tmdb.org/t/p/original${movies.results[1].backdrop_path}`} alt=""/>
               </div>
             </div>
             <div className="sec-row">
               <div className="movie">
-                <Rater total={10} rating={movies.results[2].vote_average} interactive={false}/>
+                {/* <Rater total={10} rating={movies.results[2].vote_average} interactive={false}/> */}
                 <h3>{movies.results[2].title}</h3>
                 <img src={`https://image.tmdb.org/t/p/original${movies.results[2].backdrop_path}`} alt=""/>
               </div>
               <div className="movie">
-                <Rater total={10} rating={movies.results[3].vote_average} interactive={false}/>
+                {/* <Rater total={10} rating={movies.results[3].vote_average} interactive={false}/> */}
                 <h3>{movies.results[3].title}</h3>
                 <img src={`https://image.tmdb.org/t/p/original${movies.results[3].backdrop_path}`} alt=""/>
               </div>
               <div className="movie">
-                <Rater total={10} rating={movies.results[4].vote_average} interactive={false}/>
+                {/* <Rater total={10} rating={movies.results[4].vote_average} interactive={false}/> */}
                 <h3>{movies.results[4].title}</h3>
                 <img src={`https://image.tmdb.org/t/p/original${movies.results[4].backdrop_path}`} alt=""/>
               </div>
