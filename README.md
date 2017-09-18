@@ -9,11 +9,6 @@ MovieBase is a Movie Database clone powered by The Movie Database API. The proje
 
 This app was built in an effort to become more familiar with ReactJS
 
-## ToDo
-
-* Still need to work on the mobile styling
-* Would like to make the images on the home page cleaner and links to thier specific pages
-
 ## Built With
 
 * [React](https://github.com/facebookincubator/create-react-app) - Front-End web application framework

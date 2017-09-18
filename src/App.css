@@ -211,7 +211,41 @@ small {
   padding: 5px 5px;
 }
 
-
+@media (max-width: 900px){
+  .first-row, .sec-row {
+    flex-direction: column;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  header input {
+    width: 300px;
+  }
+  .movie-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    margin: 50px auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .movie-poster {
+    width: 100%;
+    text-align: center;
+  }
+  .movie-data {
+    width: 100%;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+  }
+  .stats-left {
+    padding-bottom: 20px;
+  }
+}
 
 
 /*===============================*/
