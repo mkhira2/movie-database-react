@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
 
-const key = require('../../config.js').MY_KEY
+const key = process.env.REACT_APP_MY_KEY
 
 class MovieHome extends Component {
   constructor() {

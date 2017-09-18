@@ -3,6 +3,7 @@ import './App.css'
 
 import Movies from './Movies/components/Movies'
 
+
 class App extends Component {
   render() {
     return (

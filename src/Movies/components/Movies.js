@@ -4,7 +4,7 @@ import Header from '../../Header/components/Header'
 import MovieData from '../../MovieData/components/MovieData'
 import Footer from '../../Footer/components/Footer'
 
-const key = require('../../config.js').MY_KEY
+const key = process.env.REACT_APP_MY_KEY
 
 class Movies extends Component {
   constructor() {
@@ -28,7 +28,6 @@ class Movies extends Component {
           })
         })
       })
-
   }
 
   render() {
