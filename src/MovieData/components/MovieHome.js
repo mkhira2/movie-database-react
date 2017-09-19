@@ -23,6 +23,7 @@ class MovieHome extends Component {
 
   render() {
     let movies = this.state.topMovies
+    console.log(movies);
     if (movies) {
       console.log(movies);
       return (
