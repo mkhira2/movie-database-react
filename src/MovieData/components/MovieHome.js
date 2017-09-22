@@ -23,9 +23,7 @@ class MovieHome extends Component {
 
   render() {
     let movies = this.state.topMovies
-    console.log(movies);
     if (movies) {
-      console.log(movies);
       return (
         <div className="flex-wrapper">
           <div className="movie-home-wrapper">
