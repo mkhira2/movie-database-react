@@ -23,10 +23,12 @@ class MovieData extends Component {
               <p>{movie.overview}</p>
               <div className="stats">
                 <div className="stats-left">
+                  {movie.revenue ?
                   <div id="first">
                     <h4>Revenue</h4>
                     <h2>${movie.revenue.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</h2>
                   </div>
+                  : null}
                   <div>
                     <h4>Rating</h4>
                     <Rater total={10} rating={movie.vote_average} interactive={false}/>
@@ -34,10 +36,12 @@ class MovieData extends Component {
                   </div>
                 </div>
                 <div className="stats-right">
+                  {movie.budget ?
                   <div>
                     <h4>Budget</h4>
                     <h2>${movie.budget.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</h2>
                   </div>
+                  : null}
                   <div>
                     <h4>Runtime</h4>
                     <h2>{movie.runtime} MIN</h2>
