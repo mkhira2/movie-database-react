@@ -1,4 +1,4 @@
-# MovieBase
+# MovieBase 
 
 MovieBase is a Movie Database clone powered by The Movie Database API. The project was built using create-react-app.
 
