@@ -15,8 +15,9 @@ class MovieHome extends Component {
     fetch(url)
       .then(res => res.json())
       .then(movies => {
-        this.setState({
+        this.setState({ function() {
           topMovies: movies
+        }
         })
       })
   }
